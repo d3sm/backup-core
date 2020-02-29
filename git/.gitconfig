@@ -1,0 +1,66 @@
+[user]
+	email = EMAIL
+	name = Dmitry
+	signingkey = SIGNINKEY
+
+[alias]
+  ao = add remote origin
+  aom = add remote origin master
+  f = fetch
+  rro = remote remove origin
+  cl = clone
+#############
+  b = branch
+  bv = branch -v
+  ba = branch -a
+  bva = branch -v -a
+#############
+  c = commit -m
+  cs = commit -S -m
+  t = tag
+  co = checkout
+#############
+  df = diff
+  g = grep -I
+  l = log
+  lg = log -p
+  b = blame
+  rb = rbranch
+  rv = review
+  s = status -s
+#############
+  po = pull origin
+  pbo = pull --rebase origin
+  pbom = pull --rebase origin master
+#############
+  A = add .
+  Ac = add . && git commit -S -m
+  sh = stash
+  shl = stash list
+  sha = stash apply
+  shc = stash clear
+  mq = merge --squash
+  resh = reset --soft HEAD
+#############
+  cp = cherry-pick
+  cpa = cherry-pick --abort
+  cpc = cherry-pick --continue
+
+[core]
+  editor = nvim
+
+[color "status"]
+  added = green
+  changed = red bold
+  untracked = magenta bold
+
+[color "branch"]
+  remote = yellow
+  master = blue
+
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = magenta red bold
+	new = green bold
+	whitespace = red reverse
